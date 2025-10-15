@@ -1,0 +1,8 @@
+#carpeta local de recursos
+recursos/
+
+#video pesado
+assets/vid/naos-video-web-hd.mp4
+
+#variables de entorno
+.env
