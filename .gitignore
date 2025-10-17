@@ -1,8 +1,15 @@
-#carpeta local de recursos
+#Carpeta local de recursos
 recursos/
 
-#video pesado
+#Video pesado
 assets/vid/naos-video-web-hd.mp4
 
-#variables de entorno
+#Variables de entorno
 .env
+
+#Webhook V1
+https://hooks.zapier.com/hooks/catch/4924950/255w17d/
+
+
+#Webhook V2
+https://hooks.zapier.com/hooks/catch/4924950/2e4t6gs/

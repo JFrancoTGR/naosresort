@@ -63,7 +63,7 @@ $phone = preg_replace('/\D+/', '', $phoneIncoming);
 
 // Configuración API externo
 $API_URL    = 'https://api-3.capisoftware.com.mx/eu/capi-b/public/api/services/social_media/catch';
-$BEARER     = getenv('CAPISOFT_BEARER') ?: 'BEARER_TOKEN';
+$BEARER     = getenv('CAPISOFT_BEARER') ?: 'BEARER_CODE';
 $PROJECT_ID = getenv('CAPISOFT_PROJECT_ID') ?: '3';
 $PLATFORM   = 'web';
 $createTime = 'NOW()';

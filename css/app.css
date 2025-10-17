@@ -47,7 +47,7 @@
   --fourth-color: rgb(138, 80, 40);
   --fifth-color: rgb(109, 104, 72);
   --highlight: rgb(0, 57, 87);
-  --light-grey: rgb(217, 217, 217);
+  --light-grey: rgb(234, 234, 234);
   --bg-color: rgb(243, 243, 243);
   --bg-opacity: rgba(250, 240, 230, 0.45);
   --bg-menu-opacity: rgba(250, 240, 230, 0.95);
@@ -178,7 +178,7 @@ body {
   color: var(--primary-color);
   font-size: 15px;
   font-weight: 400;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in;
 }
 
 .nav-menu a:hover {
@@ -403,7 +403,7 @@ body {
   background-image: url('../assets/ico/ico-bg-transition-banner.svg');
   background-repeat: no-repeat;
   background-size: auto 100%;
-  background-position: 25px bottom;
+  background-position: 65px bottom;
   background-color: var(--bg-color);
   display: flex;
   align-items: center;
@@ -489,6 +489,10 @@ body {
 
 /* EXPERIENCES MAP */
 
+.section-map-container {
+    margin-top: -20px;
+  }
+
 #map-frame {
   width: 100dvw;
   height: 670px;
@@ -523,7 +527,7 @@ body {
 }
 
 .wrapper-bg {
-  padding: 15px 0;
+  padding: 25px 0;
   background-color: var(--fifth-color);
 }
 
@@ -636,10 +640,10 @@ body {
 }
 
 .custom-nav button {
-  background: var(--bg-opacity);
+  background: var(--light-grey);
   border: none;
-  width: 40px;
-  height: 40px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   cursor: pointer;
   color: var(--secondary-color);
@@ -653,7 +657,11 @@ body {
 }
 
 #custom-nav-1, #custom-nav-2, #custom-nav-3, #custom-nav-4 {
-  padding: 30px 0;
+  padding: 45px 0;
+}
+
+#custom-nav-1{
+  background-color: var(--fifth-color);
 }
 
 .swiper-pagination {
@@ -692,8 +700,8 @@ body {
   max-width: 100%;
   margin: 0 auto;
   position: relative;
-  padding: 25px 0;
-  /* background-color: var(--fifth-color); */
+  /* padding: 25px 0; */
+  background-color: var(--fifth-color);
 }
 
 .experiences-slider .swiper-slide {
@@ -971,7 +979,7 @@ path {
   width: 100vw;
   overflow: hidden;
   position: relative;
-  margin-top: 40px;
+  margin-top: -25px;
 }
 
 .views-swiper {
@@ -1030,6 +1038,11 @@ path {
 }
 
 /* CREATIVES & CREATORS SECTION */
+
+.creatives-section{
+  margin-top: -20px;
+}
+
 .creatives-swiper {
   display: flex;
   justify-content: center;
@@ -1099,9 +1112,9 @@ path {
 .parallax-divider {
   position: relative;
   width: 100vw;
-  height: 850px;
+  height: 650px;
   overflow: hidden;
-  margin: 40px 0;
+  /* margin: 40px 0; */
 }
 
 /* La imagen ahora tiene margen extra (overscan) para evitar vacíos */
@@ -1194,6 +1207,7 @@ path {
   font-size: 19px;
   line-height: 32px;
   padding: 35px 0;
+  font-weight: 300;
   font-family: var(--type-beta);
 }
 
@@ -1378,7 +1392,8 @@ path {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: bold;
+  font-family: var(--type-beta);
+  font-weight: 500;
   font-size: 20px;
   text-transform: uppercase;
 }
@@ -1387,6 +1402,7 @@ path {
   max-height: 0;
   overflow: hidden;
   font-size: 16px;
+  font-family: var(--type-beta);
   transition: max-height 0.3s ease-in-out;
   padding-right: 1rem;
 }
@@ -1400,7 +1416,7 @@ path {
   margin-top: 2rem;
   padding: 0.5rem;
   color: var(--secondary-color);
-  font-family: var(--type-alfa);
+  font-family: var(--type-beta);
   border-bottom: 1px solid var(--secondary-color);
   background-color: transparent;
   cursor: pointer;
@@ -1412,7 +1428,7 @@ path {
 
 .faqs-view-more:hover {
   color: var(--highlight);
-  font-weight: 900;
+  font-weight: 500;
   border-bottom: 1px solid var(--highlight);
 }
 
@@ -1543,7 +1559,7 @@ path {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem 1rem;
+  padding: 40px 0;
   position: relative;
   overflow: hidden;
 }
@@ -1912,7 +1928,7 @@ textarea::placeholder {
 }
 
 .footer-col a {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   text-decoration: none;
   margin-bottom: 0.5rem;
 }
@@ -2165,6 +2181,11 @@ textarea::placeholder {
     aspect-ratio: 16/9;
   }
 
+  /* PARALLAX */
+  .parallax-divider{
+    height: 350px;
+  }
+
   /* INTERACTIVE MAP */
 
   .interactive-map {
@@ -2268,7 +2289,7 @@ textarea::placeholder {
 
   .invest-left {
     padding: 2rem;
-    background-position: center top;
+    background-position: left bottom;
   }
 
   .invest-content {
@@ -2276,8 +2297,9 @@ textarea::placeholder {
   }
 
   .invest-right {
-    min-height: 400px;
-    background-position: top center;
+    min-height: 500px;
+    height: 500px;
+    background-position: center top -80px;
   }
 
   .invest-section-title {
