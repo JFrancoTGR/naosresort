@@ -6,10 +6,3 @@ assets/vid/naos-video-web-hd.mp4
 
 #Variables de entorno
 .env
-
-#Webhook V1
-https://hooks.zapier.com/hooks/catch/4924950/255w17d/
-
-
-#Webhook V2
-https://hooks.zapier.com/hooks/catch/4924950/2e4t6gs/
